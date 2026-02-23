@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        --background: 0.99 0.01 320;
+        --foreground: 0.2 0.02 280;
+        --card: 1 0 0;
+        --card-foreground: 0.2 0.02 280;
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0.02 280;
+        --primary: 0.65 0.2 330;
+        --primary-foreground: 1 0 0;
+        --secondary: 0.95 0.05 300;
+        --secondary-foreground: 0.3 0.05 280;
+        --muted: 0.96 0.02 300;
+        --muted-foreground: 0.55 0.03 280;
+        --accent: 0.92 0.08 310;
+        --accent-foreground: 0.3 0.05 280;
+        --destructive: 0.6 0.22 25;
+        --destructive-foreground: 1 0 0;
+        --border: 0.92 0.03 310;
+        --input: 0.92 0.03 310;
+        --ring: 0.65 0.2 330;
+        --chart-1: 0.7 0.2 340;
+        --chart-2: 0.65 0.18 270;
+        --chart-3: 0.6 0.15 200;
+        --chart-4: 0.75 0.15 150;
+        --chart-5: 0.8 0.18 50;
+        --sidebar: 0.98 0.01 320;
+        --sidebar-foreground: 0.2 0.02 280;
+        --sidebar-primary: 0.65 0.2 330;
+        --sidebar-primary-foreground: 1 0 0;
+        --sidebar-accent: 0.95 0.05 300;
+        --sidebar-accent-foreground: 0.3 0.05 280;
+        --sidebar-border: 0.92 0.03 310;
+        --sidebar-ring: 0.65 0.2 330;
+    }
+
+    .dark {
+        --background: 0.15 0.02 280;
+        --foreground: 0.98 0.01 320;
+        --card: 0.2 0.03 280;
+        --card-foreground: 0.98 0.01 320;
+        --popover: 0.18 0.03 280;
+        --popover-foreground: 0.98 0.01 320;
+        --primary: 0.75 0.18 330;
+        --primary-foreground: 0.15 0.02 280;
+        --secondary: 0.25 0.04 290;
+        --secondary-foreground: 0.98 0.01 320;
+        --muted: 0.25 0.03 280;
+        --muted-foreground: 0.65 0.03 300;
+        --accent: 0.35 0.08 310;
+        --accent-foreground: 0.98 0.01 320;
+        --destructive: 0.65 0.2 25;
+        --destructive-foreground: 0.98 0.01 320;
+        --border: 0.3 0.04 290;
+        --input: 0.3 0.04 290;
+        --ring: 0.7 0.18 330;
+        --chart-1: 0.65 0.2 340;
+        --chart-2: 0.6 0.18 270;
+        --chart-3: 0.55 0.15 200;
+        --chart-4: 0.7 0.15 150;
+        --chart-5: 0.75 0.18 50;
+        --sidebar: 0.18 0.03 280;
+        --sidebar-foreground: 0.98 0.01 320;
+        --sidebar-primary: 0.75 0.18 330;
+        --sidebar-primary-foreground: 0.15 0.02 280;
+        --sidebar-accent: 0.25 0.04 290;
+        --sidebar-accent-foreground: 0.98 0.01 320;
+        --sidebar-border: 0.3 0.04 290;
+        --sidebar-ring: 0.7 0.18 330;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

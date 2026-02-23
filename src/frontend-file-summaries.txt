@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for notes and todos pages with a shared layout wrapper and toast notifications.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component with cute aesthetic header navigation, gradient background, and footer with attribution link.",
+  "frontend/src/pages/NotesPage.tsx": "Notes page component managing note creation and editing state, displaying notes list and editor side-by-side with decorative cloud icon.",
+  "frontend/src/pages/TodoPage.tsx": "To-do list page component combining the add task form and task list with decorative star icon header.",
+  "frontend/src/components/NotesList.tsx": "Component that fetches and displays all notes in a grid with loading states and empty state messaging.",
+  "frontend/src/components/NoteCard.tsx": "Reusable note card component displaying individual notes with edit and delete actions, featuring hover effects and cute styling.",
+  "frontend/src/components/NoteEditor.tsx": "Form component for creating and editing notes with title and content fields, save/cancel actions, and loading states.",
+  "frontend/src/components/TodoList.tsx": "Component that fetches and displays all tasks, separated into incomplete and completed sections with counts.",
+  "frontend/src/components/TodoItem.tsx": "Individual task item component with custom checkbox using generated check icon, toggle completion, and delete functionality.",
+  "frontend/src/components/AddTodoForm.tsx": "Form component for adding new tasks with decorative star icon and inline submission.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including notes CRUD and tasks CRUD with automatic cache invalidation.",
+  "frontend/src/index.css": "Global styles with cute aesthetic OKLCH color system featuring pastel pinks, purples, and blues, plus Nunito font family for friendly typography.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with cute aesthetic color tokens, Nunito font family, custom border radius, and soft shadow utilities."
+}

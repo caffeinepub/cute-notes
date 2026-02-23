@@ -1,0 +1,106 @@
+{
+  "kind": "build_request",
+  "title": "Create cute aesthetic notes and to-do list application",
+  "projectName": "Cute Notes",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a notes management system that allows users to create, read, update, and delete notes with title and content fields",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "write notes keep notes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can create new notes with title and content",
+        "Users can view a list of all their notes",
+        "Users can edit existing notes",
+        "Users can delete notes",
+        "Notes persist across sessions"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a to-do list system that allows users to add tasks with checkboxes to mark completion status",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "to do list"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can add new to-do items",
+        "Each to-do item has a checkbox to mark as complete/incomplete",
+        "Users can delete to-do items",
+        "Completed tasks are visually distinguished from incomplete tasks",
+        "To-do items persist across sessions"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Design and implement a cute aesthetic theme with pastel colors, rounded corners, soft shadows, playful typography, and adorable UI elements throughout the entire application",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "cute aesthetic theme"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette uses soft pastel colors (pinks, lavenders, mint greens, peaches)",
+        "UI components feature rounded corners and soft shadows",
+        "Typography is friendly and approachable",
+        "Buttons and interactive elements have cute hover effects",
+        "Overall design feels cohesive and adorable",
+        "Icons and visual elements match the cute aesthetic"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Render generated decorative images as static assets in frontend/public/assets/generated for the cute aesthetic theme",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are placed in frontend/public/assets/generated",
+        "Images are referenced correctly in components",
+        "Images load properly and enhance the cute aesthetic"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use React with TypeScript for frontend",
+    "Use Motoko for backend with single-actor architecture",
+    "Use Tailwind CSS for styling",
+    "Do not modify immutable frontend paths (useInternetIdentity hooks, useActor, main.tsx, components/ui)"
+  ],
+  "nonGoals": [
+    "User authentication or multi-user support",
+    "Note sharing or collaboration features",
+    "Rich text editing or markdown support",
+    "Categories or tags for notes",
+    "Search functionality",
+    "Export or import features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Cute kawaii cloud illustration with a smiling face in soft pastel colors (cloud-icon.dim_128x128.png)",
+      "Adorable star icon with sparkles in pastel yellow and pink (star-icon.dim_96x96.png)",
+      "Playful checkmark icon in cute style with rounded edges (check-icon.dim_64x64.png)"
+    ],
+    "edits": []
+  }
+}
